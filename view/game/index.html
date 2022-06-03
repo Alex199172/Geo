@@ -13,7 +13,45 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="position-absolute top-0 start-50 translate-middle-x mt-2 timer p-2 d-flex">
+
+  <!-- Menu -->
+  <div class="nav justify-content-between align-items-center">
+    <div class="nav__logo ms-5">
+      <img class="nav__logo_img" src="assets/img/world.png" alt="exit">
+    </div>
+    <div class="nav__menu d-flex">
+      <a href="" class="nav__menu-link">
+        <div class="nav__menu-item me-3">
+          Game
+        </div>
+      </a>
+      <a href="../rating/index.html" class="nav__menu-link">
+        <div class="nav__menu-item me-3">
+          Rating
+        </div>
+      </a>
+      <a href="../online/index.html" class="nav__menu-link">
+        <div class="nav__menu-item me-3">
+          Players online
+        </div>
+      </a>
+      <a href="../rating/index.html" class="nav__menu-link">
+        <div class="nav__menu-item me-3">
+          Players history
+        </div>
+      </a>
+      <a href="../history/index.html" class="nav__menu-link">
+        <div class="nav__menu-item me-3">
+          Players item
+        </div>
+      </a>
+    </div>
+    <div class="nav__exit me-5">
+      <img class="nav__img" src="assets/img/exit.png" alt="exit">
+    </div>
+  </div>
+
+  <div class="position-absolute top-0 start-50 translate-middle-x timer p-2 d-flex">
     <div class="hours fs-2">00:</div>
     <div class="minuts fs-2">00:</div>
     <div class="seconds fs-2">10</div>
@@ -28,7 +66,7 @@
   </div>
 
   <!-- Map svg -->
-  <svg version="1.1" viewBox="650 0 600 580" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" xml:space="preserve">
+  <svg version="1.1" viewBox="650 0 600 630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" xml:space="preserve">
         <g>
             <path cs="100,100" d="M0.5,0.5 L1919.5,0.5 L1919.5,586.5 L0.5,586.5 Z" fill="#505050" stroke="#000000" fill-opacity="1" stroke-width="1" stroke-opacity="1" class="amcharts-bg"></path>
         </g>
@@ -218,7 +256,7 @@
 
 
   <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalWin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
       <div class="modal-header">
@@ -241,12 +279,35 @@
   </div>
 </div>
 
+<div class="modal fade" id="modalError" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close">
+        </button>
+      </div>
+      <div class="text-center">
+
+      </div>
+      <div class="modal-body text-center result__modal">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <!-- Chat -->
   <button class="btn position-absolute top-0 end-0 m-3"
           type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasScrolling"
           aria-controls="offcanvasScrolling">
-      <img src="https://img.icons8.com/material-sharp/24/000000/menu--v1.png"/>
+      <img class="mt-5" src="https://img.icons8.com/material-sharp/24/000000/menu--v1.png"/>
   </button>
 
   <div class="offcanvas offcanvas-end"

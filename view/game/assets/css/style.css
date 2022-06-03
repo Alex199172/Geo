@@ -11,6 +11,29 @@ h1 {
   font-size: 50px;
 }
 
+a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #000;
+}
+
+a:hover {
+  color: teal;
+}
+
+.nav {
+  min-height: 50px;
+  border-radius: 15px 100px 15px 100px;
+}
+
+.nav__img {
+  max-height: 30px;
+}
+
+.nav__logo_img {
+  max-height: 50px;
+}
+
 .amcharts-map-area {
     cursor: pointer;
 }
@@ -41,6 +64,7 @@ h1 {
   background-color: #fff;
   border-radius: 5px;
   opacity: 0.8;
+  margin-top: 65px;
 }
 
 .start__btn {
@@ -50,7 +74,7 @@ h1 {
   background: teal;
   border-radius: 12px;
   color: #fff;
-  margin-top: 85px;
+  margin-top: 138px;
   border: none;
 }
 
@@ -128,6 +152,6 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-color: #246152;
+    background-color: #505050;
     max-height: 20px;
   }

@@ -29,6 +29,10 @@ let btnEntrie = document.querySelector('.btn__entrie'),
    			 }).then(rs => {
    			   rs.json().then(rs => {
    			     console.log('result', rs)
+             localStorage.setItem('token', rs.token)
+             localStorage.setItem('id', rs.id)
+             localStorage.setItem('login', rs.login)
+             location.href = '/game/'
    			   })
    			 })
 
@@ -36,6 +40,8 @@ let btnEntrie = document.querySelector('.btn__entrie'),
          password = document.querySelector('.entrie__password').value = ''
 
   })
+
+
 
 
 
